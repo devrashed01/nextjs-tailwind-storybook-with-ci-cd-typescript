@@ -13,11 +13,4 @@ const CodeBlock = ({ children }) => {
   );
 };
 
-CodeBlock.propTypes = {
-  /**
-   * The code snippet that needs to be shown.
-   */
-  children: PropTypes.node.isRequired,
-};
-
 export default CodeBlock;

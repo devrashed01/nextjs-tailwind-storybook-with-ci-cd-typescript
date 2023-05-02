@@ -8,7 +8,22 @@ const inter = Inter({ subsets: ['latin'] });
  * > It will show a card with a URL. Clicking on the card will navigate the user to that URL.
  */
 
-const NavCard = ({ title, description, href }) => {
+type Props = {
+  /**
+   * Title to be shown in the card.
+   */
+  title: string,
+  /**
+   * Description to be shown in the card.
+   */
+  description: string,
+  /**
+   * URL of the page which users will be redirected to after clicking the card.
+   */
+  href: string,
+};
+
+const NavCard = ({ title, description, href }:Props) => {
   return (
     <a
       href={href}
@@ -25,27 +40,6 @@ const NavCard = ({ title, description, href }) => {
       <p className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}>{description}</p>
     </a>
   );
-};
-
-NavCard.defaultProps = {
-  title: '',
-  description: '',
-  href: '',
-};
-
-NavCard.propTypes = {
-  /**
-   * Title to be shown in the card.
-   */
-  title: PropTypes.string,
-  /**
-   * Description to be shown in the card.
-   */
-  description: PropTypes.string,
-  /**
-   * URL of the page which users will be redirected to after clicking the card.
-   */
-  href: PropTypes.string,
 };
 
 export default NavCard;

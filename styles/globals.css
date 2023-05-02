@@ -19,3 +19,42 @@
 body {
   color: rgb(var(--foreground-rgb));
 }
+
+/* button css */
+
+.btn {
+  @apply px-4 py-2 rounded-md shadow-sm border;
+}
+
+.btn-primary {
+  @apply text-white bg-blue-500 hover:bg-blue-600 border-blue-500;
+}
+
+.btn-secondary {
+  @apply text-gray-700 bg-gray-200 hover:bg-gray-300 border-gray-700;
+}
+
+.btn-success {
+  @apply text-white bg-green-500 hover:bg-green-600 border-green-500;
+}
+
+.btn-danger {
+  @apply text-white bg-red-500 hover:bg-red-600 border-red-500;
+}
+
+.btn-outlined {
+  background-color: transparent!important;
+  @apply !text-black;
+}
+
+.btn-sm {
+  @apply text-sm;
+}
+
+.btn-md {
+  @apply text-base;
+}
+
+.btn-lg {
+  @apply text-lg;
+}

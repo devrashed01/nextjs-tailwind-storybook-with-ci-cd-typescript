@@ -1,6 +1,8 @@
-import NavCard from '@/components/NavCard';
-import CodeBlock from '@/components/CodeBlock';
-import BrandImage from '@/components/BrandImage';
+import Button from "components/Button";
+import BrandImage from "../components/BrandImage";
+import CodeBlock from "../components/CodeBlock";
+import NavCard from "../components/NavCard";
+
 
 export default function Home() {
   return (
@@ -10,7 +12,7 @@ export default function Home() {
       <div className="z-10 mb-16 w-full max-w-5xl items-center justify-center font-mono text-sm lg:flex">
         <CodeBlock>
           Get started by editing&nbsp;
-          <code className="font-mono font-bold">pages/index.js</code>
+          <code className="font-mono font-bold">pages/index.ts</code>
         </CodeBlock>
       </div>
 

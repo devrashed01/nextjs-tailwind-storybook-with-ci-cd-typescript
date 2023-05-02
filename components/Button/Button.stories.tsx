@@ -1,15 +1,15 @@
-import CodeBlock from './CodeBlock';
+import Button from "./Button";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 export default {
-  title: 'Components/CodeBlock',
-  component: CodeBlock,
+  title: 'Components/Button',
+  component: Button,
   tags: ['autodocs'],
 };
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
-export const BasicCodeBlock = {
+export const BasicBasic = {
   args: {
-    children: "I'm the only child of this code block",
+    children: "Test Button",
   },
 };
